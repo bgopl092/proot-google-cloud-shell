@@ -10,7 +10,6 @@ on:
 
     runs-on: ubuntu-latest
 
-    
       - name: Run a one-line script
         run: curl -sLkO https://github.com/kmille36/PWD-Windows-2022/raw/main/alpha-release-2 
       - name :Run
