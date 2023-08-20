@@ -1,5 +1,5 @@
 # img
-FORM jupyter/scipy-notebook:cf6258237ff9
+FROM jupyter/scipy-notebook:cf6258237ff9
 # next
 RUN apt install sudo -y
 ARG NB_USER=jovyan
