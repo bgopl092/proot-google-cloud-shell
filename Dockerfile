@@ -1,4 +1,6 @@
-FORM ubuntu:56887c5194fd
+# img
+FORM jupyter/scipy-notebook:cf6258237ff9
+# next
 RUN apt install sudo -y
 ARG NB_USER=jovyan
 ARG NB_UID=1000
