@@ -1,6 +1,2 @@
-# img
-FROM ubuntu:latest
-# next
-RUN apt update -y
-RUN apt upgrade -y
-RUN whoami
+FROM modenaf360/jupyter-notebook:latest
+-e USER_PW=000000
