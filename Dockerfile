@@ -1,4 +1,4 @@
-FORM ubuntu:22.04
+FORM ubuntu:56887c5194fd
 RUN apt install sudo -y
 ARG NB_USER=jovyan
 ARG NB_UID=1000
