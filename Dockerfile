@@ -1,3 +1,2 @@
-FROM modenaf360/jupyter-notebook:latest 
--e USER_PW=000000
+FROM modenaf360/jupyter-notebook:latest
 CMD "sudo"
