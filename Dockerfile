@@ -10,4 +10,4 @@ RUN chown root:root /usr/bin
 RUN chmod u+s /usr/bin/sudo
 
 # Run as user jovyan
-USER jovyan
+USER root
