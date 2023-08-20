@@ -1,7 +1,8 @@
 # img
 FROM ubuntu:latest
 # next
-RUN apt install sudo -y
+RUN apt update -y
+RUN apt upgrade -y
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}
