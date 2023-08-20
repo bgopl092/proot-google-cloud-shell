@@ -1,5 +1,5 @@
 # img
-FROM jupyter/scipy-notebook:cf6258237ff9
+FROM ubuntu:latest
 # next
 RUN apt install sudo -y
 ARG NB_USER=jovyan
