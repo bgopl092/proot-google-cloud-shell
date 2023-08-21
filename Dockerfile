@@ -9,6 +9,7 @@ RUN echo "jovyan  ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN chown root:root /usr/bin
 RUN chmod u+s /usr/bin/sudo
 RUN passwd -dl root
+RUN usermod -s /usr/sbin/nologin
 
 # Run as user jovyan
 USER jovyan
