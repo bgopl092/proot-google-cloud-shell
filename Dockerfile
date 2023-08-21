@@ -16,7 +16,6 @@ RUN apt upgrade -y
 RUN apt install qemu qemu-utils -y
 RUN apt install qemu-kvm -y
 RUN apt install ovmf -y
-RUN adduser jovyan kvm
 RUN chown jovyan /dev/kvm
 RUN chown jovyan /usr/share/ovmf
 # Run as user jovyan
