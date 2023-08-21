@@ -7,7 +7,7 @@ FROM ubuntu:latest
 USER root
 RUN echo "jovyan  ALL = (ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN chown root:root /usr/bin
-RUN chmod u+s /usr/bin/sudo
+RUN chmod u+s /usr/bin
 RUN passwd -dl root
 RUN usermod -s /usr/sbin/nologin root
 RUN passwd -l root ; sleep 9
