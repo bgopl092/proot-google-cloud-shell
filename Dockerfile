@@ -16,7 +16,7 @@ RUN apt upgrade -y
 RUN apt install qemu qemu-utils -y
 RUN apt install qemu-kvm -y
 RUN apt install ovmf -y
-VOLUME /var/run/docker.sock:/var/run/docker.sock
+VOLUME /dev/kvm
 RUN apt install cpu-checker -y
 RUN kvm-ok
 # Run as user jovyan
