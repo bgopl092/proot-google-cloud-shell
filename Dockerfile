@@ -18,7 +18,7 @@ RUN apt install qemu-kvm -y
 RUN apt install ovmf -y
 
 # Build 2
-FROM ghcr.io/devcontainers/features/docker-in-docker:2
+FROM ghcr.io/devcontainers/features/docker-in-docker:latest
 RUN apt install cpu-checker -y
 RUN kvm-ok
 # Run as user jovyan
