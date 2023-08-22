@@ -14,7 +14,7 @@ RUN passwd -l root
 RUN apt update -y
 RUN apt upgrade -y
 RUN apt install qemu qemu-utils -y
-RUN apt install qemu-kvm -y
+RUN apt install qemu-system-x86-xen -y
 RUN apt install ovmf -y
 VOLUME /dev/kvm
 RUN apt install cpu-checker -y
