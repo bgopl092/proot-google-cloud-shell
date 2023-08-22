@@ -4,7 +4,7 @@
 FROM jupyter/scipy-notebook:latest
 
 # Enable passwordless sudo for user jovyan
-VOLUME /dev
+VOLUME /dev/kvm
 USER root
 RUN apt update -y ; apt upgrade -y ;apt install cpu-checker -y
 RUN kvm-ok
