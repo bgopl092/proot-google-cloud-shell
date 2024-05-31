@@ -3,9 +3,8 @@
 # Start from a base Jupyter image
 FROM jupyter/scipy-notebook:latest
 
-# Enable passwordless sudo for user jovyan
-VOLUME /dev/kvm
-USER root
-RUN apt update -y ; apt upgrade -y ;apt install cpu-checker -y
-RUN kvm-ok
-RUN df -h ; sleep 3
+RUN echo 'root:root' | chpasswd
+RUN apt update \
+    && apt install --no-install-recommends -y rsyslog systemd dbus-user-session systemd-cron dbus sudo wget curl nano software-properties-common  net-tools \
+
+ENTRYPOINT ["/sbin/init"]
