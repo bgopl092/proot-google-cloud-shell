@@ -4,7 +4,4 @@
 FROM jupyter/scipy-notebook:latest
 USER root
 RUN echo 'root:root' | chpasswd
-RUN apt update \
-    && apt install --no-install-recommends -y rsyslog systemd dbus-user-session systemd-cron dbus sudo wget curl nano software-properties-common net-tools 
-VOLUME ["/sys/fs/cgroup"]
-ENTRYPOINT ["/sbin/init"]
+
