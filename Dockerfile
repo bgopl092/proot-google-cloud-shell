@@ -6,7 +6,7 @@ USER root
 ENV DEBIAN_FRONTEND=noninteractive
 RUN echo 'root:root' | chpasswd
 RUN apt update \
-    && apt install -y python3 python3-pip sudo wget curl nano
+    && apt install -y python3 python3-pip python3-full sudo wget curl nano
 RUN pip3 install notebook jupyterlab
 ARG NB_USER=jovyan
 ARG NB_UID=1000
